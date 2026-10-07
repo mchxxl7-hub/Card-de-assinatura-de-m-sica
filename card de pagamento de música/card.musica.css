@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #E0E8FF;
+}
+
+.card {
+    width: 450px;
+    height: 100vh;
+    max-width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.container-conteudo img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: #1F2937;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #7280A8;
+    text-align: center;
+}
+
+.assinatura-anual {
+    height: 100px;
+    width: 90%;
+    background-color: whitesmoke;
+    position: relative;
+    margin: 30px auto 0;
+    border-radius: 9px;
+}
+
+.assinatura-anual .simbolo-de-musica {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 50px;
+    top: 25px;
+}
+
+.assinatura-anual {
+    text-align: center;
+}
+
+.assinatura-anual .mudar-plano {
+    position: absolute;
+    right: 35px;
+    top: 38px;
+    font-weight: bold;
+}
+
+.assinatura-anual .Annual-plan {
+    position: absolute;
+    left: 105px;
+    top: 25px;
+    font-weight: bold;
+}
+
+.assinatura-anual .price-anual {
+    color: #7280A8;
+    position: absolute;
+    left: 105px;
+    top: 50px;
+    display: block;
+}
+
+.container-conteudo .pagamento {
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #3726D9;
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 5px 1px 15px 5px rgba(0, 0, 0, 0.38);
+}
+
+.container-conteudo .cancelar {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: blue;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+
+    .card {
+        width: 400px;
+        max-width: 100%;
+    }
+
+    .container-conteudo>img {
+        height: 250px;
+    }
+
+    .assinatura-anual {
+        height: 90px;
+    }
+}
